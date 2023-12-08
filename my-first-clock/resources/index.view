@@ -1,3 +1,9 @@
-<svg>
-  <rect id="background" />
+<svg class="background">
+  <image href="images/cheddar-goblin.png" />
+
+  <defs>
+    
+  </defs>
+
+  <text id="myLabel" />
 </svg>
