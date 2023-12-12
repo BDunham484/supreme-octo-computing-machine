@@ -29,3 +29,17 @@ clock.ontick = (evt) => {
     let mins = zeroPad(today.getMinutes());
     myLabel.text = `${hours}:${mins}`;
 }
+
+var assembleEl = document.getElementById("assemble");
+
+
+const wake = () => {
+    console.log('wake ran');
+    assembleEl.animate("enable");
+}
+
+wake();
+
+// setInterval(() => {
+//     wake();
+// }, 1000 * 10);
