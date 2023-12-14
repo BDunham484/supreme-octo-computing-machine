@@ -40,6 +40,6 @@ const wake = () => {
 
 wake();
 
-// setInterval(() => {
-//     wake();
-// }, 1000 * 10);
+setInterval(() => {
+    wake();
+}, 1000 * 10);

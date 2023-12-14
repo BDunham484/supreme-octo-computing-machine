@@ -99,48 +99,48 @@
                 <line x1="158" y1="50" x2="40" y2="250" fill="antiquewhite" stroke-width="2" />
             </g>
             <g id="angleA-innerA" transform="translate(-100%-45, 500)" pointer-events="visible">
-                <animateTransform attributeType="translate" to="0, 0" from="-100%-45, 500" dur=".75" begin="enable"
+                <animateTransform attributeType="translate" to="0, 0" from="-100%-45, 500" dur="1" begin="enable"
                     final="keep" />
                 <animateTransform attributeType="translate" from="0, 0" to="-100%-45, 500" begin="disable" dur=".05" />
                 <line x1="50" y1="270" x2="158" y2="85" fill="antiquewhite" stroke-width="2" />
             </g>
-            <g id="angleA-innerB" transform="translate(-100%-45, 500)" pointer-events="visible">
-                <animateTransform attributeType="translate" to="0, 0" from="-100%-45, 500" dur=".75" begin="enable"
+            <g id="angleA-innerB" transform="translate(0, 0)" pointer-events="visible">
+                <animateTransform attributeType="translate" to="0, 0" from="-110%, -700" dur="1.75" begin="enable"
                     final="keep" />
                 <animateTransform attributeType="translate" from="0, 0" to="-100%-45, 500" begin="disable" dur=".05" />
-                <line x1="242" y1="230" x2="158" y2="85" fill="antiquewhite" stroke-width="2" />
+                <line x1="242" y1="230" x2="158" y2="85" fill="pink" stroke-width="2" />
             </g>
 
             <!-- ANGLE B -->
-            <g id="angleB-endcapA" transform="translate(-100%-45, -500)" pointer-events="visible">
-                <animateTransform attributeType="translate" to="0, 0" from="-100%-45, -500" dur="1.75" begin="enable"
+            <g id="angleB-endcapA" transform="translate(0, 0)" pointer-events="visible">
+                <animateTransform attributeType="translate" to="0, 0" from="500, 0" dur="1.75" begin="enable"
                     final="keep" />
                 <animateTransform attributeType="translate" from="0, 0" to="-100%-45, -500" begin="disable" dur=".05" />
-                <line x1="158" y1="50" x2="178" y2="50" fill="antiquewhite" stroke-width="2" />
+                <line x1="158" y1="50" x2="178" y2="50" fill="aqua" stroke-width="2" />
             </g>
-            <g id="angleB-outerA" transform="translate(100+180%, 500)" pointer-events="visible">
-                <animateTransform attributeType="translate" to="0, 0" from="100+180%, 500" dur="1.75" begin="enable"
+            <g id="angleB-outerA" transform="translate(0, 0)" pointer-events="visible">
+                <animateTransform attributeType="translate" to="0, 0" from="500, 0" dur="1.75" begin="enable"
                     final="keep" />
                 <animateTransform attributeType="translate" from="0, 0" to="100+180%, 500" begin="disable" dur=".05" />
-                <line x1="178" y1="50" x2="296" y2="250" fill="antiquewhite" stroke-width="2" />
+                <line x1="178" y1="50" x2="296" y2="250" fill="aqua" stroke-width="2" />
             </g>
-            <g id="angleB-innerA" transform="translate(-100%-45, 500)" pointer-events="visible">
-                <animateTransform attributeType="translate" to="0, 0" from="-100%-45, 500" dur=".75" begin="enable"
+            <g id="angleB-innerA" transform="translate(0, 0)" pointer-events="visible">
+                <animateTransform attributeType="translate" to="0, 0" from="500, 0" dur="1.75" begin="enable"
+                    final="keep" />
+                <animateTransform attributeType="translate" from="0, 0" to="-100%-45" begin="disable" dur=".05" />
+                <line x1="158" y1="50" x2="262" y2="230" fill="aqua" stroke-width="2" />
+            </g>
+            <g id="angleB-outerB" transform="translate(0, 0)" pointer-events="visible">
+                <animateTransform attributeType="translate" to="0, 0" from="500, 0" dur="1.75" begin="enable"
                     final="keep" />
                 <animateTransform attributeType="translate" from="0, 0" to="-100%-45, 500" begin="disable" dur=".05" />
-                <line x1="158" y1="50" x2="262" y2="230" fill="antiquewhite" stroke-width="2" />
+                <line x1="85" y1="250" x2="296" y2="250" fill="aqua" stroke-width="2" />
             </g>
-            <g id="angleB-outerB" transform="translate(-100%-45, 500)" pointer-events="visible">
-                <animateTransform attributeType="translate" to="0, 0" from="-100%-45, 500" dur=".75" begin="enable"
+            <g id="angleB-innerB" transform="translate(0, 0)" pointer-events="visible">
+                <animateTransform attributeType="translate" to="0, 0" from="500, 0" dur="1.75" begin="enable"
                     final="keep" />
                 <animateTransform attributeType="translate" from="0, 0" to="-100%-45, 500" begin="disable" dur=".05" />
-                <line x1="85" y1="250" x2="296" y2="250" fill="antiquewhite" stroke-width="2" />
-            </g>
-            <g id="angleB-innerB" transform="translate(-100%-45, 500)" pointer-events="visible">
-                <animateTransform attributeType="translate" to="0, 0" from="-100%-45, 500" dur=".75" begin="enable"
-                    final="keep" />
-                <animateTransform attributeType="translate" from="0, 0" to="-100%-45, 500" begin="disable" dur=".05" />
-                <line x1="100" y1="230" x2="262" y2="230" fill="antiquewhite" stroke-width="2" />
+                <line x1="100" y1="230" x2="262" y2="230" fill="aqua" stroke-width="2" />
             </g>
 
             <!-- ANGLE C -->
@@ -150,14 +150,14 @@
                 <animateTransform attributeType="translate" from="0, 0" to="-100%-45, -500" begin="disable" dur=".05" />
                 <line x1="296" y1="250" x2="281" y2="270" fill="antiquewhite" stroke-width="2" />
             </g>
-            <g id="angleC-OuterA" transform="translate(-100%-45, 500)" pointer-events="visible">
-                <animateTransform attributeType="translate" to="0, 0" from="-100%-45, 500" dur=".75" begin="enable"
+            <g id="angleC-OuterA" transform="translate(0, 0)" pointer-events="visible">
+                <animateTransform attributeType="translate" to="0, 0" from="-500, 0" dur="1.75" begin="enable"
                     final="keep" />
                 <animateTransform attributeType="translate" from="0, 0" to="-100%-45, 500" begin="disable" dur=".05" />
                 <line x1="50" y1="270" x2="281" y2="270" fill="antiquewhite" stroke-width="2" />
             </g>
             <g id="angleC-innerB" transform="translate(-100%-45, 500)" pointer-events="visible">
-                <animateTransform attributeType="translate" to="0, 0" from="-100%-45, 500" dur=".75" begin="enable"
+                <animateTransform attributeType="translate" to="0, 0" from="-100%-45, 500" dur="1.75" begin="enable"
                     final="keep" />
                 <animateTransform attributeType="translate" from="0, 0" to="-100%-45, 500" begin="disable" dur=".05" />
                 <line x1="85" y1="250" x2="170" y2="105" fill="antiquewhite" stroke-width="2" />
