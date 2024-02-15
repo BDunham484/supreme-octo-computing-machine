@@ -1,12 +1,12 @@
-var assembleEl = document.getElementById("assemble");
+// var assembleEl = document.getElementById("assemble");
 
 
-const wake = () => {
-    console.log('wake ran');
-    assembleEl.animate("enable");
-}
+// const wake = () => {
+//     console.log('wake ran');
+//     assembleEl.animate("enable");
+// }
 
 
-setInterval(() => {
-    wake();
-}, 1000 * 10);
+// setInterval(() => {
+//     wake();
+// }, 1000 * 10);

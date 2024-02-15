@@ -1,8 +1,8 @@
-.background {
+/* .background {
   viewport-fill: #666666;
-}
+} */
 
-#myLabel {
+/* #myLabel {
   font-size: 80;
   font-family: System-Bold;
   text-length: 32;
@@ -10,24 +10,25 @@
   x: 50%;
   y: 50%+40;
   fill: whitesmoke;
-}
+} */
 
-#apLabel {
-  font-size: 25;
+
+/* #apLabel {
+  font-size: 10;
   font-family: System-Bold;
-  text-length: 32;
+  text-length: 80;
   text-anchor: start;
   x: 0;
   y: 0;
-  fill: whitesmoke;
-}
+  fill: white;
+};
 
 #mLabel {
-  font-size: 25;
+  font-size: 10;
   font-family: System-Bold;
-  text-length: 32;
+  text-length: 80;
   text-anchor: start;
   x: 0;
   y: 22;
-  fill: whitesmoke;
-}
+  fill: white;
+}; */
