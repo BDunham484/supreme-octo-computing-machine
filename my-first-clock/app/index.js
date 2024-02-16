@@ -1,17 +1,23 @@
 import clock from "clock";
 import * as document from "document";
 import { preferences } from "user-settings";
+import { 
+    backgrounds,
+    changeBackground
+} from "../../index";
 
 const backgroundImageEl = document.getElementById("background-image");
 const apLabel = document.getElementById("apLabel");
 const mLabel = document.getElementById("mLabel");
+
+
 
 function zeroPad(i) {
     if (i < 10) {
         i = "0" + i;
     }
     return i;
-}
+};
 
 // Update the clock every minute
 clock.granularity = "minutes";
@@ -23,21 +29,22 @@ const backgroundChanger = (hours) => {
     console.log('🎃🎃🎃🎃 hours: ', hours);
 
     const imagesArr = [
-        "cheddar-goblin.png",
-        "day.png",
-        "deepBlue (1).png",
-        "moon.png",
-        "sunrise-blend-crop.png",
-        "sunset-blended-crop.png",
-        "sunset-waves-crop.png"
+        // "cheddar-goblin.png",
+        // "daytime.png",
+        // "deepBlue (1).png",
+        // "moon.png",
+        // "sunrise.png",
+        // "sunset.png",
+        // "sunset-waves-crop.png",
+        "hyper-moon.png",
     ]
 
     const index = Math.floor(Math.random() * 7)
     console.log('🎃🎃🎃🎃 index: ', index);
 
-    backgroundImageEl.href=`images/${imagesArr[index]}`;
+    backgroundImageEl.href=`images/${imagesArr[0]}`;
+    // backgroundImageEl.href=`images/${imagesArr[index]}`;
 };
-
 
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
@@ -50,10 +57,12 @@ clock.ontick = (evt) => {
         mLabel.text = "M";
         hours = hours % 12 || 12;
         
-        backgroundChanger(hours);
+        changeBackground(hours, text, backgrounds);
+        // backgroundChanger(hours);
     } else {
         // 24h format
         hours = zeroPad(hours);
+        backgroundChanger(hours);
     }
     let mins = zeroPad(today.getMinutes());
     myLabel.text = `${hours}:${mins}`;
@@ -72,3 +81,5 @@ wake();
 setInterval(() => {
     wake();
 }, 1000 * 10);
+
+
