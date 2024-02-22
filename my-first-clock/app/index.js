@@ -3,7 +3,8 @@ import * as document from "document";
 import { preferences } from "user-settings";
 import { 
     backgrounds,
-    changeBackground
+    changeBackground_12hr,
+    changeBackground_24hr,
 } from "../../index";
 
 const backgroundImageEl = document.getElementById("background-image");
@@ -25,27 +26,6 @@ clock.granularity = "minutes";
 // Get a handle on the <text> element
 const myLabel = document.getElementById("myLabel");
 
-const backgroundChanger = (hours) => {
-    console.log('🎃🎃🎃🎃 hours: ', hours);
-
-    const imagesArr = [
-        // "cheddar-goblin.png",
-        // "daytime.png",
-        // "deepBlue (1).png",
-        // "moon.png",
-        // "sunrise.png",
-        // "sunset.png",
-        // "sunset-waves-crop.png",
-        "hyper-moon.png",
-    ]
-
-    const index = Math.floor(Math.random() * 7)
-    console.log('🎃🎃🎃🎃 index: ', index);
-
-    backgroundImageEl.href=`images/${imagesArr[0]}`;
-    // backgroundImageEl.href=`images/${imagesArr[index]}`;
-};
-
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
     let today = evt.date;
@@ -57,12 +37,11 @@ clock.ontick = (evt) => {
         mLabel.text = "M";
         hours = hours % 12 || 12;
         
-        changeBackground(hours, text, backgrounds);
-        // backgroundChanger(hours);
+        changeBackground_12hr(hours, text, backgrounds);
     } else {
         // 24h format
         hours = zeroPad(hours);
-        backgroundChanger(hours);
+        changeBackground_24hr(hours, backgrounds)
     }
     let mins = zeroPad(today.getMinutes());
     myLabel.text = `${hours}:${mins}`;
