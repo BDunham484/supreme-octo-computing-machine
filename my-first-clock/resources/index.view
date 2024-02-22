@@ -1,14 +1,10 @@
 <svg class="gradient-background">
-    <image id="background-image" href="images/day.png" />
-    <!-- <image href="images/sunset-blended-crop.png" /> -->
-    <!-- <image href="images/sunrise-blend-crop.png" /> -->
-    <!-- <image href="images/deepBlue (1).png" /> -->
+    <image id="background-image"/>
 
     <section x="85%" y="50%" width="100" height="15">
         <text id="apLabel" />
         <text id="mLabel" />
     </section>
-    
 
     <defs>
         <symbol id="elements">
@@ -97,4 +93,27 @@
     </svg>
 
     <text id="myLabel" />
+
+    <svg id="container">
+        <rect id="background" class="cycle-fill" />
+        <use id="statsCycle" href="#cycleview">
+            <use href="#cycleview-item" class="cycle-item">
+                <text>Steps: 1,337</text>
+            </use>
+            <use href="#cycleview-item" class="cycle-item">
+                <text>Calories: 731</text>
+            </use>
+            <use href="#cycleview-item" class="cycle-item">
+                <text>Distance: 1.00mi</text>
+            </use>
+            <use href="#cycleview-item" class="cycle-item">
+                <text>Floors: 10</text>
+            </use>
+            <use href="#cycleview-item" class="cycle-item">
+                <text>Active: 13</text>
+            </use>
+        </use>
+    </svg>
+
+    <!-- <rect id="rect" width="100%" height="100%" pointer-events="visible" fill="none" opacity="0.1" /> -->
 </svg>

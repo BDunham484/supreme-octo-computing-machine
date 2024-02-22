@@ -1,17 +1,19 @@
 import clock from "clock";
 import * as document from "document";
+import display from "display";
 import { preferences } from "user-settings";
 import { 
     backgrounds,
     changeBackground_12hr,
     changeBackground_24hr,
-} from "../../index";
+} from "../resources/index";
 
-const backgroundImageEl = document.getElementById("background-image");
+// const backgroundImageEl = document.getElementById("background-image");
 const apLabel = document.getElementById("apLabel");
 const mLabel = document.getElementById("mLabel");
-
-
+const rect = document.getElementById("rect");
+const statsCycle = document.getElementById("statsCycle");
+const items = statsCycle.getElementsByClassName("cycle-item");
 
 function zeroPad(i) {
     if (i < 10) {
@@ -47,18 +49,34 @@ clock.ontick = (evt) => {
     myLabel.text = `${hours}:${mins}`;
 }
 
-var assembleEl = document.getElementById("assemble");
+display.addEventListener("change", function() {
+    display.on ? wake() : sleep();
+})
 
+var assemble = document.getElementById("assemble");
 
 const wake = () => {
-    console.log('wake ran');
-    assembleEl.animate("enable");
+    assemble.animate("enable");
 }
 
-wake();
+const sleep = () => {
+    assemble.animate("disable");
+}
 
-setInterval(() => {
-    wake();
-}, 1000 * 10);
+console.log('items.length: ', items.length);
+
+statsCycle.value = 3;
+
+// Get the current selected item index
+console.log(statsCycle.value);
+
+// Hide a specific item by index
+// items[2].style.display = "none";
+
+// wake();
+
+// setInterval(() => {
+//     wake();
+// }, 1000 * 10);
 
 
