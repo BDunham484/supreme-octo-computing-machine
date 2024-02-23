@@ -56,3 +56,85 @@
   text-anchor: middle;
   fill: pink;
 }
+
+#stepsLabel {
+  font-size: 25;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 10;
+  y: 21;
+  fill: white;
+}
+
+#stepsIcon {
+  width: 25;
+  height: 25;
+  href: "images/icons/steps.png";
+  x: -49;
+}
+
+#caloriesLabel {
+  font-size: 25;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 25;
+  y: 22;
+  fill: white;
+}
+
+#caloriesIcon {
+  width: 25;
+  height: 25;
+  href: "images/icons/calories.png";
+}
+
+#distanceLabel {
+  font-size: 25;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 10;
+  y: 22;
+  fill: white;
+}
+
+#distanceIcon {
+  width: 25;
+  height: 25;
+  href: "images/icons/distance.png";
+  x: -20;
+}
+
+#floorsLabel {
+  font-size: 25;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 25;
+  y: 22;
+  fill: white;
+}
+
+#floorsIcon {
+  width: 25;
+  height: 25;
+  href: "images/icon/floors.png";
+}
+
+#activeLabel {
+  font-size: 25;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 13;
+  y: 50;
+  fill: white;
+}
+
+#activeIcon {
+  width: 25;
+  height: 25;
+  href: "images/icons/azm.png";
+}

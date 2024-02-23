@@ -98,19 +98,29 @@
         <rect id="background" class="cycle-fill" />
         <use id="statsCycle" href="#cycleview">
             <use href="#cycleview-item" class="cycle-item">
-                <text>Steps: 1,337</text>
+                <image id="stepsIcon" />
+                <text id="stepsLabel" />
+                <!-- <text>Steps: 1,337</text> -->
             </use>
             <use href="#cycleview-item" class="cycle-item">
-                <text>Calories: 731</text>
+                <image id="caloriesIcon" />
+                <text id="caloriesLabel" />
+                <!-- <text>Calories: 731</text> -->
             </use>
             <use href="#cycleview-item" class="cycle-item">
-                <text>Distance: 1.00mi</text>
+                <image id="distanceIcon" />
+                <text id="distanceLabel" />
+                <!-- <text>Distance: 1.00mi</text> -->
             </use>
             <use href="#cycleview-item" class="cycle-item">
-                <text>Floors: 10</text>
+                <image id="floorsIcon" />
+                <text id="floorsLabel" />
+                <!-- <text>Floors: 10</text> -->
             </use>
             <use href="#cycleview-item" class="cycle-item">
-                <text>Active: 13</text>
+                <image id="activeIcon" />
+                <text id="activeLabel" />
+                <!-- <text>Active: 13</text> -->
             </use>
         </use>
     </svg>

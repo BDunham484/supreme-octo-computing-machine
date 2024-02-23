@@ -9,26 +9,26 @@ export const backgrounds = [
 ]
 
 export const changeBackground_12hr = (hours, text, backgrounds) => {
-    console.log('changeBackground_12hr has run');
-    console.log('hours: ', hours);
-    console.log('text: ', text);
+    // console.log('changeBackground_12hr has run');
+    // console.log('hours: ', hours);
+    // console.log('text: ', text);
     if (((hours >= 6) && (hours < 7)) && text === "A") {
-        console.log('Sunrise');
+        // console.log('Sunrise');
         backgroundImageEl.href=`images/${backgrounds[0]}`
     } else if (((hours >= 7) && (hours < 12)) && text === "A") {
-        console.log('daytime');
+        // console.log('daytime');
         backgroundImageEl.href=`images/${backgrounds[1]}`
     } else if (((hours >= 12) && (hours < 6)) && text === "P") {
-        console.log('daytime');
+        // console.log('daytime');
         backgroundImageEl.href=`images/${backgrounds[1]}`
     } else if (((hours >= 6) && (hours < 7)) && text === "P") {
-        console.log('sunset');
+        // console.log('sunset');
         backgroundImageEl.href=`images/${backgrounds[2]}`
     } else if (((hours >= 7) && (hours < 12)) && text === "P") {
-        console.log('neon-moon');
+        // console.log('neon-moon');
         backgroundImageEl.href=`images/${backgrounds[3]}`
     } else if (((hours >= 1) && (hours < 6)) && text === "A") {
-        console.log('neon-moon');
+        // console.log('neon-moon');
         backgroundImageEl.href=`images/${backgrounds[3]}`
     }
 }

@@ -21,6 +21,13 @@ const rect = document.getElementById("rect");
 const statsCycle = document.getElementById("statsCycle");
 const items = statsCycle.getElementsByClassName("cycle-item");
 var assemble = document.getElementById("assemble");
+const stepsLabel = document.getElementById("stepsLabel");
+const caloriesLabel = document.getElementById("caloriesLabel");
+const distanceLabel = document.getElementById("distanceLabel");
+const floorsLabel = document.getElementById("floorsLabel");
+const activeLabel = document.getElementById("activeLabel");
+
+
 
 function zeroPad(i) {
     if (i < 10) {
@@ -101,10 +108,10 @@ if (BodyPresenceSensor) {
 }
 
 // Permissions
-if (HeartRateSensor && appbit.permissions.granted("access_heart_rate")) {
-    const hrm = new HeartRateSensor();
-    hrm.start();
-}
+// if (HeartRateSensor && appbit.permissions.granted("access_heart_rate")) {
+//     const hrm = new HeartRateSensor();
+//     hrm.start();
+// }
 
 // Activities
 function activities() {
@@ -122,11 +129,11 @@ function activities() {
 }
 
 // Battery Life Display
-console.log(Math.floor(battery.chargeLevel) + "%");
-powerLabel.text = `${battery.chargeLevel}%`; // initialize on startup
-battery.onchange = (charger, evt) => {
-    powerLabel.text = `${battery.chargeLevel}%`;
-}
+// console.log(Math.floor(battery.chargeLevel) + "%");
+// powerLabel.text = `${battery.chargeLevel}%`; // initialize on startup
+// battery.onchange = (charger, evt) => {
+//     powerLabel.text = `${battery.chargeLevel}%`;
+// }
 
 // Determine which battery image needs to be shown
 // function batteryLevel() {
