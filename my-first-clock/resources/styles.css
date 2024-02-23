@@ -61,9 +61,9 @@
   font-size: 25;
   font-family: System-Bold;
   text-length: 32;
-  text-anchor: start;
+  text-anchor: middle;
   x: 50%;
-  y: 75%; 
+  y: 70%; 
   fill: white;
 }
 
@@ -71,8 +71,8 @@
   width: 25;
   height: 25;
   href: "images/icons/steps.png";
-  x: 40%;
-  y: 58%;
+  x: 50%-12;
+  y: 73%;
   fill: white;
 }
 
@@ -80,9 +80,9 @@
   font-size: 25;
   font-family: System-Bold;
   text-length: 32;
-  text-anchor: start;
+  text-anchor: middle;
   x: 50%;
-  y: 75%;
+  y: 70%;
   fill: white;
 }
 
@@ -90,8 +90,8 @@
   width: 25;
   height: 25;
   href: "images/icons/calories.png";
-  x: 40%;
-  y: 58%;
+  x: 50%-12;
+  y: 73%;
   fill: white;
 }
 
@@ -99,9 +99,9 @@
   font-size: 25;
   font-family: System-Bold;
   text-length: 32;
-  text-anchor: start;
+  text-anchor: middle;
   x: 50%;
-  y: 75%;
+  y: 70%;
   fill: white;
 }
 
@@ -109,8 +109,8 @@
   width: 25;
   height: 25;
   href: "images/icons/distance.png";
-  x: 40%;
-  y: 58%;
+  x: 50%-12;
+  y: 73%;
   fill: white;
 }
 
@@ -118,9 +118,9 @@
   font-size: 25;
   font-family: System-Bold;
   text-length: 32;
-  text-anchor: start;
+  text-anchor: middle;
   x: 50%;
-  y: 75%;
+  y: 70%;
   fill: white;
 }
 
@@ -128,8 +128,8 @@
   width: 25;
   height: 25;
   href: "images/icons/floors.png";
-  x: 40%;
-  y: 58%;
+  x: 50%-12;
+  y: 73%;
   fill: white;
 }
 
@@ -137,9 +137,9 @@
   font-size: 25;
   font-family: System-Bold;
   text-length: 32;
-  text-anchor: start;
+  text-anchor: middle;
   x: 50%;
-  y: 75%;
+  y: 70%;
   fill: white;
 }
 
@@ -147,8 +147,8 @@
   width: 25;
   height: 25;
   href: "images/icons/azm.png";
-  x: 40%;
-  y: 58%;
+  x: 50%-12;
+  y: 73%;
   fill: white;
 }
 
@@ -156,9 +156,9 @@
   font-size: 25;
   font-family: Seville-Bold;
   text-length: 32;
-  text-anchor: start;
+  text-anchor: middle;
   x: 50%;
-  y: 75%;
+  y: 70%;
   fill: white;
 }
 
@@ -166,7 +166,7 @@
   width: 25;
   height: 25;
   href: "images/icons/heart_rate.png";
-  x: 40%;
-  y: 58%;
+  x: 50%-12;
+  y: 73%;
   fill: white;
   }

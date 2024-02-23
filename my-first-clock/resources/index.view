@@ -103,8 +103,8 @@
                 <!-- <text>Steps: 1,337</text> -->
             </use>
             <use href="#cycleview-item" class="cycle-item">
-                <image id="caloriesIcon" />
-                <text id="caloriesLabel" />
+                <image id="heartRateIcon" />
+                <text id="heartRateLabel" />
                 <!-- <text>Calories: 731</text> -->
             </use>
             <use href="#cycleview-item" class="cycle-item">
@@ -123,8 +123,8 @@
                 <!-- <text>Active: 13</text> -->
             </use>
             <use href="#cycleview-item" class="cycle-item">
-                <image id="heartRateIcon" />
-                <text id="heartRateLabel" />
+                <image id="caloriesIcon" />
+                <text id="caloriesLabel" />
                 <!-- <text>Active: 13</text> -->
             </use>
         </use>

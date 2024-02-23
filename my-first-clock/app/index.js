@@ -72,15 +72,15 @@ const sleep = () => {
 // Hide a specific item by index
 // items[2].style.display = "none";
 
-wake();
+// wake();
 
-setInterval(() => {
-    wake();
-}, 1000 * 10);
+// setInterval(() => {
+//     wake();
+// }, 1000 * 10);
 
-// display.addEventListener("change", function() {
-//     display.on ? wake() : sleep();
-// })
+display.addEventListener("change", function() {
+    display.on ? wake() : sleep();
+})
 // Permissions
 if (HeartRateSensor && appbit.permissions.granted("access_heart_rate")) {
     const hrm = new HeartRateSensor();

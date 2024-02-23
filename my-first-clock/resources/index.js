@@ -25,10 +25,10 @@ export const changeBackground_12hr = (hours, text, backgrounds) => {
         // console.log('sunset');
         backgroundImageEl.href=`images/${backgrounds[2]}`
     } else if (((hours >= 7) && (hours < 12)) && text === "P") {
-        // console.log('neon-moon');
+        // console.log('neon-moon-1');
         backgroundImageEl.href=`images/${backgrounds[3]}`
     } else if (((hours >= 1) && (hours < 6)) && text === "A") {
-        // console.log('neon-moon');
+        // console.log('neon-moon-2');
         backgroundImageEl.href=`images/${backgrounds[3]}`
     }
 }
