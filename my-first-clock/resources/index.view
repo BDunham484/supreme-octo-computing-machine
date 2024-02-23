@@ -122,6 +122,11 @@
                 <text id="activeLabel" />
                 <!-- <text>Active: 13</text> -->
             </use>
+            <use href="#cycleview-item" class="cycle-item">
+                <image id="heartRateIcon" />
+                <text id="heartRateLabel" />
+                <!-- <text>Active: 13</text> -->
+            </use>
         </use>
     </svg>
 

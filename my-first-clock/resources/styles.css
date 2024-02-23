@@ -52,7 +52,7 @@
 .cycle-item text {
   font-size: 32;
   x: 50%;
-  y: 75%;
+  y: 75%; 
   text-anchor: middle;
   fill: pink;
 }
@@ -61,9 +61,9 @@
   font-size: 25;
   font-family: System-Bold;
   text-length: 32;
-  text-anchor: middle;
-  x: 10;
-  y: 21;
+  text-anchor: start;
+  x: 50%;
+  y: 75%; 
   fill: white;
 }
 
@@ -71,7 +71,9 @@
   width: 25;
   height: 25;
   href: "images/icons/steps.png";
-  x: -49;
+  x: 40%;
+  y: 58%;
+  fill: white;
 }
 
 #caloriesLabel {
@@ -79,8 +81,8 @@
   font-family: System-Bold;
   text-length: 32;
   text-anchor: start;
-  x: 25;
-  y: 22;
+  x: 50%;
+  y: 75%;
   fill: white;
 }
 
@@ -88,6 +90,9 @@
   width: 25;
   height: 25;
   href: "images/icons/calories.png";
+  x: 40%;
+  y: 58%;
+  fill: white;
 }
 
 #distanceLabel {
@@ -95,8 +100,8 @@
   font-family: System-Bold;
   text-length: 32;
   text-anchor: start;
-  x: 10;
-  y: 22;
+  x: 50%;
+  y: 75%;
   fill: white;
 }
 
@@ -104,7 +109,9 @@
   width: 25;
   height: 25;
   href: "images/icons/distance.png";
-  x: -20;
+  x: 40%;
+  y: 58%;
+  fill: white;
 }
 
 #floorsLabel {
@@ -112,24 +119,27 @@
   font-family: System-Bold;
   text-length: 32;
   text-anchor: start;
-  x: 25;
-  y: 22;
+  x: 50%;
+  y: 75%;
   fill: white;
 }
 
 #floorsIcon {
   width: 25;
   height: 25;
-  href: "images/icon/floors.png";
+  href: "images/icons/floors.png";
+  x: 40%;
+  y: 58%;
+  fill: white;
 }
 
 #activeLabel {
   font-size: 25;
   font-family: System-Bold;
   text-length: 32;
-  text-anchor: middle;
-  x: 13;
-  y: 50;
+  text-anchor: start;
+  x: 50%;
+  y: 75%;
   fill: white;
 }
 
@@ -137,4 +147,26 @@
   width: 25;
   height: 25;
   href: "images/icons/azm.png";
+  x: 40%;
+  y: 58%;
+  fill: white;
 }
+
+#heartRateLabel {
+  font-size: 25;
+  font-family: Seville-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 50%;
+  y: 75%;
+  fill: white;
+}
+
+#heartRateIcon {
+  width: 25;
+  height: 25;
+  href: "images/icons/heart_rate.png";
+  x: 40%;
+  y: 58%;
+  fill: white;
+  }

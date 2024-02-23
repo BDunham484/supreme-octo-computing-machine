@@ -1,5 +1,6 @@
 import clock from "clock";
 import * as document from "document";
+// import * as util from "../common/utils";
 import display from "display";
 import { preferences } from "user-settings";
 import {
@@ -26,7 +27,7 @@ const caloriesLabel = document.getElementById("caloriesLabel");
 const distanceLabel = document.getElementById("distanceLabel");
 const floorsLabel = document.getElementById("floorsLabel");
 const activeLabel = document.getElementById("activeLabel");
-
+const heartRateLabel = document.getElementById("heartRateLabel");
 
 
 function zeroPad(i) {
@@ -41,6 +42,7 @@ clock.granularity = "minutes";
 
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
+    activities();
     let today = evt.date;
     let hours = today.getHours();
     if (preferences.clockDisplay === "12h") {
@@ -79,19 +81,26 @@ setInterval(() => {
 // display.addEventListener("change", function() {
 //     display.on ? wake() : sleep();
 // })
+// Permissions
+if (HeartRateSensor && appbit.permissions.granted("access_heart_rate")) {
+    const hrm = new HeartRateSensor();
+    hrm.start();
+}
 
 // Heart Rate Sensor
 if (HeartRateSensor) {
-    const hrm = new HeartRateSensor();
+    console.log("This device has a HeartRateSensor!");
+    const hrm = new HeartRateSensor({ frequency: 1 });
     hrm.addEventListener("reading", () => {
-        // console.log(`Current heart rate: ${hrm.heartRate}`);
-        heartLabel.text = `${hrm.heartRate}`;
+        heartRateLabel.text = `${hrm.heartRate}`;
     });
     display.addEventListener("change", () => {
         // Automatically stop the sensor when the screen is off to conserve battery
         display.on ? hrm.start() : hrm.stop();
     });
     hrm.start();
+} else {
+    console.log("This device does NOT have a HeartRateSensor!");
 }
 
 // Body Presence Sensor
@@ -99,19 +108,14 @@ if (BodyPresenceSensor) {
     const body = new BodyPresenceSensor();
     body.addEventListener("reading", () => {
         if (!body.present) {
-            heartLabel.text = "--"
+            heartRateLabel.text = "--"
+            hrm.stop()
         } else {
-
+            hrm.start();
         }
     });
     body.start();
 }
-
-// Permissions
-// if (HeartRateSensor && appbit.permissions.granted("access_heart_rate")) {
-//     const hrm = new HeartRateSensor();
-//     hrm.start();
-// }
 
 // Activities
 function activities() {
